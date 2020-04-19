@@ -34,7 +34,8 @@
 		<plugin name="cordova-plugin-statusbar" spec="*"/>
 		<plugin name="cordova-plugin-extension" spec="*"/>
 		<plugin name="cordova-plugin-whitelist" version="1"/>
-			<plugin name="cordova-plugin-admobpro" source="npm">
+		<plugin name="cordova-plugin-admobpro" source="npm">
+			<variable name="ADMOB_APP_ID" value="ca-app-pub-9795366520625065~5411114054" />
 			<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
 		</plugin>
 
