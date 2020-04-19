@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget id="cocoon.ilyich.trump" version="1.2" android-versionCode="100201" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-		<name>Trump Remix Generator</name>
-		<description>Create Your Trump remix</description>
+	<widget id="phonegap.ilyich.trumpcorona" version="1.0" android-versionCode="100000" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+		<name>Trump Corona Remix Generator</name>
+		<description>Create Your Trump Corona remix</description>
 		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com"> Johnny Tal </author>
 		<content src="index.html"/>
 		
