@@ -14,8 +14,8 @@ var gameMain = function(game){
  
     texts = [];
     textsText = [ // text for each sound button
-	    'Control', 'So Well', 'No Doctor', "Flu", 'Germ', 'Hydroxy', 
-	    'If it\nWorks', 'Lose', 'Try It', "We'll See", "Wins", "May Work"
+	    'Just fine', 'So well', 'Not a\ndoctor', "Like a\nflu", 'Call it\n a germ', 'Hydroxy', 
+	    'If it\nworks', "Can't lose", 'Try\nHydroxy', "We'll See", "Hydroxy\nWins", "It may\nwork"
     ];
     
     musicText = [];
@@ -38,7 +38,6 @@ gameMain.prototype = {
         createMusicBtns();
 
         menuBtn = this.add.sprite(595, 870, 'gear');
-        menuBtn.scale.set(0.9, 0.52);
         menuBtn.inputEnabled = true;
         menuBtn.events.onInputDown.add(openOptions, this);
         
@@ -253,7 +252,7 @@ function createSoundBtns(){
     
     for(t = 0; t < SOUND_BUTTONS_N; t++){
     	texts[t] = game.add.text(0, 0, textsText[t], {
-        	font: '48px ' + font, fill: 'purple', align: 'center', stroke:'grey', strokeThickness: 1
+        	font: '46px ' + font, fill: 'purple', align: 'center', stroke:'grey', strokeThickness: 1
    		});
    		
    		texts[t].x = soundButtons[t].x + soundButtons[t].width / 2 - texts[t].width / 2;
@@ -268,7 +267,6 @@ function createMusicBtns(){
     	musicButtons[m] = musicBtnsGroup.create(15 + (280 * m), 960, 'musicBtn');
     	musicButtons[m].alpha = 0.87;
     	musicButtons[m].inputEnabled = true;
-    	musicButtons[m].scale.set(1, 0.8);
     	musicButtons[m].tint = 0xffff00;
 
     	musicButtons[m].events.onInputDown.add(playMusic, this);        
@@ -284,7 +282,7 @@ function createMusicBtns(){
     }
     
 	musicAddText = game.add.text(20, 895, 'ADD MUSIC:', {
-		font: '48px ' + font, fill: 'yellow', align: 'center', stroke:'black', strokeThickness: 5
+		font: '50px ' + font, fill: 'yellow', align: 'center', stroke:'black', strokeThickness: 5
 	});
 }
 
@@ -309,9 +307,9 @@ function loadSounds(){
         sfxtrump10, sfxtrump11, sfxtrump12
     ];
     
-    sfxMusic = game.add.audio('music1', 0.4, true);
-    sfxMusic2 = game.add.audio('music2', 0.4, true);
-    sfxMusic3 = game.add.audio('music3', 0.4, true);
+    sfxMusic = game.add.audio('music1', 0.7, true);
+    sfxMusic2 = game.add.audio('music2', 0.7, true);
+    sfxMusic3 = game.add.audio('music3', 0.7, true);
     
     musics = [sfxMusic, sfxMusic2, sfxMusic3];
 }
